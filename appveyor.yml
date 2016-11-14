@@ -22,6 +22,7 @@ install:
 #
 # Non-tags get executables named for the Git commit ID.
 before_build:
+  - dir C:\Libraries\boost_1_62_0
   - set EI_VERSION=%APPVEYOR_REPO_COMMIT:~0,7%
   - if "%APPVEYOR_REPO_TAG%"=="true" set EI_VERSION=v%APPVEYOR_REPO_TAG_NAME:~8%
   - if not "%APPVEYOR_REPO_BRANCH%"=="master" set EI_VERSION=%EI_VERSION%-%APPVEYOR_REPO_BRANCH%
