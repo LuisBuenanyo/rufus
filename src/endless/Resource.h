@@ -104,6 +104,7 @@
 #define HTML_ELEM_AdvancedOptionsSubtitle 2067
 #define HTML_ELEM_CombinedUsbButton	      2068
 #define HTML_ELEM_USBLearnMore            2069
+#define HTML_ELEM_AdvancedPagePreviousButton  2070
 
 
 // Rufus messages

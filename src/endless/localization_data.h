@@ -90,6 +90,7 @@ const loc_control_id control_id[] = {
 	LOC_CTRL_HTML(AdvancedOptionsSubtitle),
 	LOC_CTRL_HTML(CombinedUsbButton),
 	LOC_CTRL_HTML(USBLearnMore),
+	LOC_CTRL_HTML(AdvancedPagePreviousButton),
 	LOC_CTRL(MSG_020),
 	LOC_CTRL(MSG_021),
 	LOC_CTRL(MSG_022),

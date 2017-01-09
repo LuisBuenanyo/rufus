@@ -157,6 +157,7 @@ t AdvancedInstallReminder "To create an Endless USB Stick you will need a USB de
 t AdvancedOptionsSubtitle "With an <b>Endless USB Stick</b> you can:"
 t CombinedUsbButton "Create Endless USB Stick"
 t USBLearnMore "Learn more about the Endless USB Stick"
+t AdvancedPagePreviousButton "Previous"
 
 # *Short* size names. These can be used as suffixes
 t MSG_020 "bytes"
