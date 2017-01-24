@@ -3676,7 +3676,11 @@ HRESULT CEndlessUsbToolDlg::CallJavascript(LPCTSTR method, CComVariant parameter
 
     DISPID dispidMethod = -1;
     hr = m_dispexWindow->GetDispID(CComBSTR(method), fdexNameCaseSensitive, &dispidMethod);
-    IFFALSE_RETURN_VALUE(SUCCEEDED(hr), "Error getting method dispid", E_FAIL);
+    if (!SUCCEEDED(hr)) {
+        _com_error err(hr);
+        uprintf("Error getting DISPID for method '%ls': %lx %ls", method, hr, err.ErrorMessage());
+        return E_FAIL;
+    }
     if (parameter2 == CComVariant()) {
         hr = m_dispWindow.Invoke1(dispidMethod, &parameter1);
     } else {
