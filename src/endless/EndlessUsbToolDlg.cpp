@@ -3659,8 +3659,8 @@ void CEndlessUsbToolDlg::OnClose()
 
 HRESULT CEndlessUsbToolDlg::CallJavascript(LPCTSTR method, CComVariant parameter1, CComVariant parameter2)
 {
+    FUNCTION_ENTER_FMT("%ls", method);
     HRESULT hr;
-    //uprintf("CallJavascript called with method %ls", method);
     if (m_spWindowElem == NULL) {
         hr = m_spHtmlDoc->get_parentWindow(&m_spWindowElem);
         IFFALSE_RETURN_VALUE(SUCCEEDED(hr) && m_spWindowElem != NULL, "Error querying for parent window.", E_FAIL);
