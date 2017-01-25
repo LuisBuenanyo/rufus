@@ -110,3 +110,5 @@ function resetCheck(elemId) {
 	}
 	elem.checked = false;
 }
+
+setTimeout(alert, 1000, "JavaScript was loaded");
